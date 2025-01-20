@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", serif;
+    /* background-color: rgb(46, 46, 46); */
+}
+
+:root {
+    --main-color: #FEA301;
+    --secondary-color: #01ACFD;
+    --text-color: #111111;
+}
+
+/* Header Section */
+
+#header {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: bold;
+    gap: 10px;
+}
+
+.logo-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.navigation {
+    width: 390px;
+    height: 30px;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+}
+
+#nav-1 {
+    color: var(--main-color);
+    transition: .3s;
+}
+
+
+#nav-2 {
+    color: var(--secondary-color);
+    transition: .3s;
+}
+
+
+#nav-3 {
+    color: #05D4DF;
+    transition: .3s;
+}
+
+#nav-4 {
+    color: #5D58EF;
+    transition: .3s;
+}
+
+#nav-1:hover, #nav-2:hover, #nav-3:hover, #nav-4:hover {
+    color: #ff0000;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--main-color);
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.menu, hr {
+    display: none;
+}
+
+
+/* Responsive For Mobile */
+
+@media screen and (max-width: 567px) {
+    .logo-text, .navigation, .button {
+        display: none;
+    }
+
+    .menu, hr {
+        display: block;
+        font-size: 1.87rem;
+    }
+}
