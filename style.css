@@ -15,6 +15,7 @@ body {
     --main-color: #FEA301;
     --secondary-color: #01ACFD;
     --text-color: #111111;
+    --bg-color: #ffffff;
 }
 
 /* Header Section */
@@ -97,13 +98,63 @@ body {
     font-size: 1.25rem;
     font-weight: 500;
     padding: 10px;
+    border: none;
+    color: var(--bg-color);
     border-radius: 8px;
+    transition: .4s;
+}
+
+.button:hover {
+    background-color: #ff0000;
+    cursor: pointer;
 }
 
 .menu, hr {
     display: none;
 }
 
+/* Home Section */
+
+#home {
+    position: relative;
+    width: 80%;
+    height: calc(100vh - 100px);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    width: 60%;
+}
+
+.home-title {
+    font-size: 3.5rem;
+}
+
+#title-color1 {
+    color: var(--main-color);
+}
+
+#title-color2 {
+    color: var(--secondary-color);
+}
+
+.home-description {
+    margin-top: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+#btn {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+#btn:hover {
+    background-color: #ff0000;
+}
 
 /* Responsive For Mobile */
 
@@ -115,5 +166,34 @@ body {
     .menu, hr {
         display: block;
         font-size: 1.87rem;
+    }
+
+    /* Home Section */
+
+    #home {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+        flex-direction: column-reverse;
+    }
+
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .home-title {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    
+    .home-description {
+        font-size: 0.87rem;
+    }
+    
+    #btn {
+        display: block;
+        margin: auto;
     }
 }
