@@ -441,6 +441,13 @@ body {
     background-color: #ffa20057;
 }
 
+marquee {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
 .footer-container {
     background-color: var(--secondary-color);
     height: 520px;
