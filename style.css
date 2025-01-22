@@ -616,4 +616,35 @@ body {
     #sub-over-button, .sub-container-desc h6 {
         font-size: .8rem;
     }
+
+    /* Footer */
+
+    .footer-container {
+        height: 600px;
+    }
+
+    .footer-elements {
+        width: 90%;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    
+    .section {
+        width: 100%;
+        height: auto;
+        gap: 10px;
+        
+    }
+
+    .sub-section {
+        flex-direction: column;
+    }
+
+    .title > h2, .f-icon > h2 {
+        margin-bottom: 15px;
+    }
+
+    .f-card {
+        padding-bottom: 35px;
+    }
 }
